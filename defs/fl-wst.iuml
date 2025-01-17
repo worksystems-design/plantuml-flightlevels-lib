@@ -1,9 +1,11 @@
 @startuml(id=wst.common)
+
 hide stereotype
 skinparam handwritten false
 skinparam arrowColor #888888
 skinparam arrowThickness 2
 skinparam arrowFontSize 10
+skinparam componentStyle rectangle
 
 skinparam fontName Gadugi
 skinparam fontSize 14
