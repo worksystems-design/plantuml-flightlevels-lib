@@ -2,78 +2,77 @@
 
 hide stereotype
 skinparam handwritten false
-skinparam arrowColor #888888
-skinparam arrowThickness 2
-skinparam arrowFontSize 10
 skinparam componentStyle rectangle
-
-skinparam fontName Gadugi
-skinparam fontSize 14
-skinparam fontStyle normal
-
-skinparam componentFontColor #666666
-skinparam cardFontColor #666666
-skinparam arrowFontColor #666666
-skinparam legendFontColor #666666
-skinparam packageFontColor #666666
-
-skinparam sameComponentWidth<<FL2>> true
 
 !define contributes "contributes to"
 
-skinparam component {
+<style>
+document {
+  fontName Gadugi
+  fontSize 14
+  fontStyle normal
+}
+
+componentDiagram {
+  arrow {
+    LineColor #888888
+    LineThickness 2
+    FontSize 10
+    FontColor #666666
+  }
+}  
+
+component {
   backgroundColor #f9f9f9
-  borderColor #888888
+  LineColor #888888
   roundCorner 10
-  borderThickness 2
+  LineThickness 2
+  FontColor #666666
+
+  .FL3 {
+    backgroundColor #e8d0de
+    LineColor #d3a5c1
+  }
+
+  .FL2 {
+    backgroundColor #d5e2f3
+    LineColor #a8c4ec
+  }
+
+  .FL1 {
+    backgroundColor #d4e7d4
+    LineColor #99c8be
+  }
 }
 
-skinparam component<<FL3>> {
-  backgroundColor #e8d0de
-  borderColor #d3a5c1
-}
-
-skinparam component<<FL2>> {
-  backgroundColor #d5e2f3
-  borderColor #a8c4ec
-}
-
-skinparam component<<FL1>> {
-  backgroundColor #d4e7d4
-  borderColor #99c8be
-}
-
-skinparam card {
-  BackgroundColor<<FL2>> #d5e2f3
-  BorderColor<<FL2>> #a8c4ec
-
-  roundCorner 10
-  borderThickness 2
-
-  fontName Gadugi
-  fontSize 14
-  fontStyle normal
-}
-
-skinparam package {
+package {
   backgroundColor #GhostWhite
-  borderColor #cccccc
-  borderStyle dashed
+  lineColor #cccccc
+  lineStyle 4-4
 
-  fontName Gadugi
-  fontSize 14
-  fontStyle normal
+  FontName Gadugi
+  FontSize 14
+  FontStyle normal
+  FontColor #666666
 }
+
+</style>
+
 @enduml
 
 @startuml(id=wst.legend)
-skinparam legend {
+
+<style>
+legend {
   backgroundColor #GhostWhite
-  borderColor #GhostWhite
+  LineColor #GhostWhite
   entrySeparator #GhostWhite
+  
   fontName Gadugi
   fontSize 14
+  FontColor #666666
 }
+</style>
 
 legend bottom left
   <#GhostWhite,#GhostWhite>|        |= Legend |
