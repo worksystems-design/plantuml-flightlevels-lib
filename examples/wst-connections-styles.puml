@@ -1,0 +1,16 @@
+@startuml
+
+!include defs/fl-wst.iuml
+
+
+package FL3 <<FL3>> {
+  [Strategy] <<FL3>>
+}
+
+package FL2 <<FL2>> {
+  [Tactic] <<FL2>>
+}
+
+[Tactic] -up-> [Strategy] : contributes
+
+@enduml
