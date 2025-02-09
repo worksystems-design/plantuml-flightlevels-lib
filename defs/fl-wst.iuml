@@ -11,6 +11,12 @@ document {
   fontName Gadugi
   fontSize 14
   fontStyle normal
+
+  title {
+    fontSize 16
+    fontStyle bold
+    FontColor #666666
+  }
 }
 
 componentDiagram {

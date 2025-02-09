@@ -2,6 +2,8 @@
 
 !include defs/fl-wst.iuml
 
+title Componente Styles
+
 [FL3] <<FL3>>
 [FL2] <<FL2>>
 [FL1] <<FL1>>

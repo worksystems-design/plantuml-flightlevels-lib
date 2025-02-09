@@ -1,0 +1,7 @@
+@startuml
+
+!include defs/fl-wst.iuml
+
+title Test Title
+
+@enduml
