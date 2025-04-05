@@ -7,15 +7,15 @@ package NoLevel {
 }
 
 package FL3 <<FL3>> {
-  [Strategy] <<FL3>>
+  [Strategy] worksystem(3)
 }
 
 package FL2 <<FL2>> {
-  [Tactic] <<FL2>>
+  [Tactic] worksystem(2)
 }
 
 package FL1 <<FL1>> {
-  [Operation] <<FL1>>
+  [Operation] worksystem(1)
 }
 
 @enduml

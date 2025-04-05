@@ -6,6 +6,37 @@ skinparam componentStyle rectangle
 
 !define contributes "contributes to"
 
+' Color definitions
+!$FL3BackgroundColor = "#e8d0de"
+!$FL3LineColor = "#d3a5c1"
+!$FL2BackgroundColor = "#d5e2f3"
+!$FL2LineColor = "#a8c4ec"
+!$FL1BackgroundColor = "#d4e7d4"
+!$FL1LineColor = "#99c8be"
+
+' Icon/Sprite support
+sprite ws1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" viewBox="0 0 22 20" width="469.333" xmlns:v="https://vecta.io/nano"><path d="M8 1v18h6V1zM7 1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19H7zm8 0v18h4.5a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 1zM0 2.5A2.5 2.5 0 0 1 2.5 0h17A2.5 2.5 0 0 1 22 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 0 17.5zM3 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm7-4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm7 0h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM3 5v1h2V5zm0 4v1h2V9zm7-4v1h2V5zm7 0v1h2V5zm0 4v1h2V9zm0 4v1h2v-1zM2.5 3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1z" fill="$FL1LineColor"/></svg>
+sprite ws2 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" viewBox="0 0 22 20" width="469.333" xmlns:v="https://vecta.io/nano"><path d="M8 1v18h6V1zM7 1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19H7zm8 0v18h4.5a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 1zM0 2.5A2.5 2.5 0 0 1 2.5 0h17A2.5 2.5 0 0 1 22 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 0 17.5zM3 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm7-4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm7 0h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM3 5v1h2V5zm0 4v1h2V9zm7-4v1h2V5zm7 0v1h2V5zm0 4v1h2V9zm0 4v1h2v-1zM2.5 3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1z" fill="$FL2LineColor"/></svg>
+sprite ws3 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" viewBox="0 0 22 20" width="469.333" xmlns:v="https://vecta.io/nano"><path d="M8 1v18h6V1zM7 1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19H7zm8 0v18h4.5a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 1zM0 2.5A2.5 2.5 0 0 1 2.5 0h17A2.5 2.5 0 0 1 22 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 0 17.5zM3 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm7-4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm7 0h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM3 5v1h2V5zm0 4v1h2V9zm7-4v1h2V5zm7 0v1h2V5zm0 4v1h2V9zm0 4v1h2v-1zM2.5 3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1z" fill="$FL3LineColor"/></svg>
+
+!unquoted procedure worksystem($level = 1)
+!if $level == 1
+  <<$ws1{scale=1}>> <<FL1>>
+!elseif $level == 2
+  <<$ws2{scale=1}>> <<FL2>>
+!elseif $level == 3
+  <<$ws3{scale=1}>> <<FL3>>
+!endprocedure
+
+!unquoted procedure contributor($level = 1)
+!if $level == 1
+  <<FL1>>
+!elseif $level == 2
+  <<FL2>>
+!elseif $level == 3
+  <<FL3>>
+!endprocedure
+
 <style>
 document {
   fontName Gadugi
@@ -36,18 +67,18 @@ component {
   FontColor #666666
 
   .FL3 {
-    backgroundColor #e8d0de
-    LineColor #d3a5c1
+    backgroundColor $FL3BackgroundColor
+    LineColor $FL3LineColor
   }
 
   .FL2 {
-    backgroundColor #d5e2f3
-    LineColor #a8c4ec
+    backgroundColor $FL2BackgroundColor
+    LineColor $FL2LineColor
   }
 
   .FL1 {
-    backgroundColor #d4e7d4
-    LineColor #99c8be
+    backgroundColor $FL1BackgroundColor
+    LineColor $FL1LineColor
   }
 }
 

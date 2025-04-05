@@ -4,10 +4,22 @@
 
 title Componente Styles
 
-[FL3] <<FL3>>
-[FL2] <<FL2>>
-[FL1] <<FL1>>
+[FL3] worksystem(3)
+[FL2] worksystem(2)
+[FL1] worksystem(1)
 
 [No Level]
+
+@enduml
+
+@startuml 
+!include defs/fl-wst.iuml
+
+title Compound FL2
+
+component FL22 worksystem(2) {
+  [FL11] contributor()
+  [FL12] contributor()
+}
 
 @enduml

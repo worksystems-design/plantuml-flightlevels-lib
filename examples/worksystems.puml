@@ -1,0 +1,20 @@
+@startuml
+!include defs/fl-wst.iuml
+
+title Work Systems
+
+[FL3] worksystem(3)
+[Product] worksystem(2)
+
+component FL2 worksystem(2) {
+  [Team1] contributor()
+  [Team2] contributor()
+}
+
+[Team3] worksystem(1)
+
+Product -up-> FL3
+FL2 -up-> Product
+Team3 -up-> FL2
+
+@enduml
