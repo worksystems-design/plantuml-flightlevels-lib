@@ -1,7 +1,6 @@
 @startuml(id=wst.common)
 
 hide stereotype
-skinparam handwritten false
 skinparam componentStyle rectangle
 
 !define contributes "contributes to"
