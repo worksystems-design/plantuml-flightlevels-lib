@@ -1,0 +1,19 @@
+@startuml
+!include defs/fl-wst.iuml
+
+[test] <<FL1>>
+[test2] <<FL1>>
+
+!include defs/fl-wst.iuml!delta
+
+[added] <<FL1>> <<added>>
+[changed] <<FL1>> <<changed>>
+[removed] <<FL1>> <<removed>>
+
+[added] --> [test] <<added>>
+[changed] --> [test] <<changed>>
+[removed] --> [test] <<removed>>
+
+[test2] --> [test]
+
+@enduml

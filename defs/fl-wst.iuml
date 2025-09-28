@@ -13,6 +13,10 @@ skinparam componentStyle rectangle
 !$FL1BackgroundColor = "#d4e7d4"
 !$FL1LineColor = "#99c8be"
 
+!$AddedColor = "#43AA8B"
+!$ChangedColor = "#F4A261"
+!$RemovedColor = "#E76F51"
+
 ' Icon/Sprite support
 sprite ws1 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" viewBox="0 0 22 20" width="469.333" xmlns:v="https://vecta.io/nano"><path d="M8 1v18h6V1zM7 1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19H7zm8 0v18h4.5a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 1zM0 2.5A2.5 2.5 0 0 1 2.5 0h17A2.5 2.5 0 0 1 22 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 0 17.5zM3 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm7-4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm7 0h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM3 5v1h2V5zm0 4v1h2V9zm7-4v1h2V5zm7 0v1h2V5zm0 4v1h2V9zm0 4v1h2v-1zM2.5 3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1z" fill="$FL1LineColor"/></svg>
 sprite ws2 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" viewBox="0 0 22 20" width="469.333" xmlns:v="https://vecta.io/nano"><path d="M8 1v18h6V1zM7 1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19H7zm8 0v18h4.5a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 1zM0 2.5A2.5 2.5 0 0 1 2.5 0h17A2.5 2.5 0 0 1 22 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 0 17.5zM3 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm7-4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm7 0h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zm0 4h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM3 5v1h2V5zm0 4v1h2V9zm7-4v1h2V5zm7 0v1h2V5zm0 4v1h2V9zm0 4v1h2v-1zM2.5 3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1zm7 0a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1z" fill="$FL2LineColor"/></svg>
@@ -36,6 +40,7 @@ sprite ws3 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" 
   <<FL3>>
 !endprocedure
 
+' Common styling
 <style>
 document {
   fontName Gadugi
@@ -91,11 +96,57 @@ package {
   FontStyle normal
   FontColor #666666
 }
-
 </style>
 
 @enduml
 
+' Delta Styles
+
+' Delte includes
+@startuml(id=delta)
+<style>
+componentDiagram {
+  arrow {
+    .added {
+        LineColor $AddedColor
+        LineThickness 3
+        LineStyle dashed
+    }
+    .changed {
+        LineColor $ChangedColor
+        LineThickness 3
+        LineStyle Dotted
+    }
+    .removed {
+        LineColor $RemovedColor
+        LineThickness 3
+        LineStyle Dotted
+  }
+}
+component {
+  .added {
+    LineColor $AddedColor
+    FontColor $AddedColor
+    LineThickness 3
+  }
+
+  .changed {
+    LineColor $ChangedColor
+    FontColor $ChangedColor
+    LineThickness 3
+  }
+
+  .removed {
+    LineColor $RemovedColor
+    FontColor $RemovedColor
+    LineThickness 3
+  }
+}
+</style>
+@enduml
+
+
+' Legend
 @startuml(id=wst.legend)
 
 <style>
@@ -118,6 +169,7 @@ legend bottom left
 endlegend
 @enduml
 
+' wsd Branding
 @startuml(id=wsd.branding)
 right footer Thomas Krause - worksystems.design
 @enduml
