@@ -11,6 +11,9 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
+# Claude Code internal guidance (not part of library)
+CLAUDE.md
+
 # not yet published
 /defs/*
 /03*/*

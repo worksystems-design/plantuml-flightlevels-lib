@@ -1,6 +1,5 @@
 @startuml(id=wst.common)
 
-hide stereotype
 skinparam componentStyle rectangle
 
 !define contributes "contributes to"
@@ -37,14 +36,18 @@ sprite ws3 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" 
 !endprocedure
 
 <style>
+stereotype {
+  hidden true
+}
+
 document {
-  fontName Gadugi
-  fontSize 14
-  fontStyle normal
+  FontName Gadugi
+  FontSize 14
+  FontStyle normal
 
   title {
-    fontSize 16
-    fontStyle bold
+    FontSize 16
+    FontStyle bold
     FontColor #666666
   }
 }
@@ -56,35 +59,49 @@ componentDiagram {
     FontSize 10
     FontColor #666666
   }
-}  
+}
 
 component {
-  backgroundColor #f9f9f9
-  LineColor #888888
-  roundCorner 10
+  componentStyle rectangle
+  BackGroundColor #f9f9f9
+  LineColor #cccccc
+  RoundCorner 10
   LineThickness 2
   FontColor #666666
 
   .FL3 {
-    backgroundColor $FL3BackgroundColor
+    BackGroundColor $FL3BackgroundColor
     LineColor $FL3LineColor
   }
 
   .FL2 {
-    backgroundColor $FL2BackgroundColor
+    BackGroundColor $FL2BackgroundColor
     LineColor $FL2LineColor
   }
 
   .FL1 {
-    backgroundColor $FL1BackgroundColor
+    BackGroundColor $FL1BackgroundColor
     LineColor $FL1LineColor
   }
 }
 
+note {
+  FontName Gadugi
+  FontSize 14
+  FontStyle normal
+  FontColor #666666
+  LineColor #cccccc
+  RoundCorner 5
+}
+
+rnote {
+  RoundCorner 5
+}
+
 package {
-  backgroundColor #GhostWhite
-  lineColor #cccccc
-  lineStyle 4-4
+  BackGroundColor #GhostWhite
+  LineColor #cccccc
+  LineStyle 4-4
 
   FontName Gadugi
   FontSize 14
@@ -100,12 +117,12 @@ package {
 
 <style>
 legend {
-  backgroundColor #GhostWhite
+  BackGroundColor #GhostWhite
   LineColor #GhostWhite
-  entrySeparator #GhostWhite
-  
-  fontName Gadugi
-  fontSize 14
+  EntrySeparator #GhostWhite
+
+  FontName Gadugi
+  FontSize 14
   FontColor #666666
 }
 </style>
