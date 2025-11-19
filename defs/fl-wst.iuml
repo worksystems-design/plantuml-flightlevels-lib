@@ -39,6 +39,42 @@ sprite ws3 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="426.667" 
   <<FL3>>
 !endprocedure
 
+' Tag macros - complete color system (based on color description values)
+' Reds & Magentas
+!define tagSoftRedPink(text) <back:#D4949F><color:#2D3A45>text</color></back>
+!define tagPurpleRedTone(text) <back:#C89FB8><color:#2D3A45>text</color></back>
+!define tagWarmRedOrange(text) <back:#D9A89F><color:#2D3A45>text</color></back>
+
+' Oranges
+!define tagPaleWarmOrange(text) <back:#E8B8A0><color:#2D3A45>text</color></back>
+!define tagDeeperBurntOrange(text) <back:#C9956B><color:#2D3A45>text</color></back>
+
+' Yellows
+!define tagGoldenYellow(text) <back:#E8D4A8><color:#2D3A45>text</color></back>
+!define tagSoftYellowBrown(text) <back:#E3D5B7><color:#2D3A45>text</color></back>
+!define tagVeryPaleYellow(text) <back:#F5EDD9><color:#2D3A45>text</color></back>
+
+' Greens
+!define tagMutedGrayGreen(text) <back:#B8D4C8><color:#2D3A45>text</color></back>
+!define tagBlueGreen(text) <back:#8FB8B0><color:#2D3A45>text</color></back>
+!define tagDeeperTeal(text) <back:#4A8A7F><color:white>text</color></back>
+
+' Blues & Cyans
+!define tagPaleBlueGray(text) <back:#B8C8D9><color:#2D3A45>text</color></back>
+!define tagGentleBlue(text) <back:#9FB8D4><color:#2D3A45>text</color></back>
+!define tagDeeperBlue(text) <back:#7A92B8><color:white>text</color></back>
+
+' Purples & Violets
+!define tagLightPurple(text) <back:#D4B8E0><color:#2D3A45>text</color></back>
+!define tagTruePurple(text) <back:#B89FD4><color:#2D3A45>text</color></back>
+!define tagDeeperPurple(text) <back:#A889B8><color:#2D3A45>text</color></back>
+
+' Neutrals
+!define tagDarkText(text) <back:#2D3A45><color:white>text</color></back>
+!define tagNeutralBridge(text) <back:#A89A8F><color:#2D3A45>text</color></back>
+!define tagLightBackground(text) <back:#F5F6F7><color:#2D3A45>text</color></back>
+!define tagCreamyBackground(text) <back:#FAF8F6><color:#2D3A45>text</color></back>
+
 ' Common styling
 <style>
 stereotype {

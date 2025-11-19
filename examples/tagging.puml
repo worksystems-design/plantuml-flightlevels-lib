@@ -1,0 +1,10 @@
+@startuml
+!include defs/fl-wst.iuml
+title Tagging 
+
+package [FL2] {
+    [TaggedSW\n tagLightPurple(SW)] worksystem(2)
+    [TaggedHW\n tagPaleBlueGray(HW)] worksystem(2)
+}
+
+@enduml
